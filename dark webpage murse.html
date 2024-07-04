@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Murse</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with an actual background image URL */
+            background-size: cover;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(31, 31, 31, 0.9);
+            color: #4CAF50;
+            text-align: center;
+            padding: 1em 0;
+            border-bottom: 2px solid #4CAF50;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #e0e0e0;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            color: #ffffff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: rgba(31, 31, 31, 0.9);
+            border-radius: 8px;
+        }
+        section {
+            padding: 20px;
+            background: #1f1f1f;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #333;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background: #2b2b2b;
+            color: #e0e0e0;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Maintenance Murse</h1>
+        <p>From Handyman to Licensed Practical Nurse (LPN)</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#videos">YouTube Videos</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my personal website where I share my journey from being a handyman to becoming a Licensed Practical Nurse. Follow along as I share my experiences, challenges, and triumphs.</p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Mike. I started my career as a handyman, and after several years, I decided to pursue a career in healthcare. This journey has been filled with learning, growth, and numerous experiences that I am excited to share with you.</p>
+        </section>
+        <section id="videos">
+            <h2>YouTube Videos</h2>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id-1" frameborder="0" allowfullscreen></iframe>
+                <p>Video description for video 1</p>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id-2" frameborder="0" allowfullscreen></iframe>
+                <p>Video description for video 2</p>
+            </div>
+            <!-- Add more videos as needed -->
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>Blog Post Title</h3>
+                <p>Content for the blog post...</p>
+            </article>
+            <!-- Add more blog posts as needed -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: [Your Email]</p>
+            <p>Phone: [Your Phone Number]</p>
+            <p>Social Media: [Your Social Media Links]</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Maintenance Murse</p>
+    </footer>
+</body>
+</html>
